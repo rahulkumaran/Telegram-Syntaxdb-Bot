@@ -34,10 +34,11 @@ def search(bot, update, args):
 			bot.sendChatAction(chat_id = update.message.chat_id, action = ChatAction.TYPING)
 			bot.sendMessage(chat_id = update.message.chat_id, parse_mode=ParseMode.HTML, text = content[i])
 
-	bot.sendChatAction(chat_id = update.message.chat_id, action = ChatAction.TYPING)
-	bot.sendMessage(chat_id = update.message.chat_id, text =  '''
-	There are no related searches to the topic you entered! Make sure your search query was right and try again! Check for spelling mistakes and follow the format in /help
-	''')
+	if(count == 0):
+		bot.sendChatAction(chat_id = update.message.chat_id, action = ChatAction.TYPING)
+		bot.sendMessage(chat_id = update.message.chat_id, text =  '''
+		There are no related searches to the topic you entered! Make sure your search query was right and try again! Check for spelling mistakes and follow the format in /help
+		''')
 
 
 
