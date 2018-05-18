@@ -16,7 +16,7 @@ There are mainly 3 options here:<br/>
 `/start` and `/help` are very basic options!<br/>
 
 ### /start
-On typing this, you get a welcome message!
-
+On typing this, you get a welcome message!<br/>
+![alt text](https://github.com/rahulkumaran/Telegram-Syntaxdb-Bot/blob/master/Images/start.jpg)<br><br>
 ### /help
 On typing this you get a message from the bot that tells you about how to use it! Looks exactly like in the image below!<br>
