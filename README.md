@@ -23,4 +23,13 @@ On typing this, you get a welcome message!<br/>
 On typing this you get a message from the bot that tells you about how to use it! Looks exactly like in the image below!<br>
 ![alt text](https://github.com/rahulkumaran/Telegram-Syntaxdb-Bot/blob/master/Images/help.jpg)<br><br>
 
-### /search
+### /search <search query> <language>
+
+So `/search` does the main functionality. Here you have to mention the concept you want to search and mention the language in which you want to search that concept.<br/>
+
+For example:
+  ```
+  If you want to search the concept of print in java, then you search it this way
+  /search for in java
+  ```
+  ![alt text](https://github.com/rahulkumaran/Telegram-Syntaxdb-Bot/blob/master/Images/search.jpg)<br><br>
