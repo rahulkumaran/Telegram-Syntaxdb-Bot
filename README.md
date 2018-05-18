@@ -32,4 +32,6 @@ For example:
   If you want to search the concept of print in java, then you search it this way
   /search for in java
   ```
-  ![alt text](https://github.com/rahulkumaran/Telegram-Syntaxdb-Bot/blob/master/Images/search.jpg)<br><br>
+  ![alt text](https://github.com/rahulkumaran/Telegram-Syntaxdb-Bot/blob/master/Images/search1.jpg)<br><br>
+  
+  To look at how the bot responds back to the above command, click [here](https://github.com/rahulkumaran/Telegram-Syntaxdb-Bot/blob/master/Images/search.jpg)
