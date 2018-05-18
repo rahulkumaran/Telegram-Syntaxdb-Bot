@@ -35,3 +35,5 @@ For example:
   ![alt text](https://github.com/rahulkumaran/Telegram-Syntaxdb-Bot/blob/master/Images/search1.jpg)<br><br>
   
   To look at how the bot responds back to the above command, click [here](https://github.com/rahulkumaran/Telegram-Syntaxdb-Bot/blob/master/Images/search.jpg)
+  
+  ## The project is going to be active! If you face any issues, then please raise the issue. If you liked this bot or if it ever helped you, then please start this repository!
