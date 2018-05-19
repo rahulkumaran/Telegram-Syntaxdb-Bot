@@ -24,15 +24,10 @@ def search(bot, update, args):
 	content = syntax.getContent()
 	print(content)
 	
-	if(content == ""):
-		error = "Enter a valid search option"
+	for i in range(0,len(content)):
+		count += 1
 		bot.sendChatAction(chat_id = update.message.chat_id, action = ChatAction.TYPING)
-		bot.sendMessage(chat_id = update.message.chat_id, text = error)
-	else:
-		for i in range(0,len(content)):
-			count += 1
-			bot.sendChatAction(chat_id = update.message.chat_id, action = ChatAction.TYPING)
-			bot.sendMessage(chat_id = update.message.chat_id, parse_mode=ParseMode.HTML, text = content[i])
+		bot.sendMessage(chat_id = update.message.chat_id, text = content[i])
 
 	if(count == 0):
 		bot.sendChatAction(chat_id = update.message.chat_id, action = ChatAction.TYPING)
@@ -50,6 +45,3 @@ def help(bot, update):
 		Example : Suppose you want to use how to use the concept for in java,
 		/search for in java
 	''')
-
-
-
