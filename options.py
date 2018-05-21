@@ -2,6 +2,7 @@ from telegram.ext import CommandHandler, Updater
 from telegram import *
 import syntaxdb
 
+
 def start(bot, update):
 	bot.sendChatAction(chat_id = update.message.chat_id, action = ChatAction.TYPING)
 	
@@ -13,6 +14,12 @@ def search(bot, update, args):
 	topic = ""
 	i = 0
 	count = 0
+	if(len(args)==0):
+		bot.sendChatAction(chat_id = update.message.chat_id, action = ChatAction.TYPING)
+		bot.sendMessage(chat_id = update.message.chat_id, text =  '''
+		Please make sure to enter the search query, else I can't really help you!
+		''')
+		exit()
 	for arg in args:
 		if(i < (len(args) - 1)):
 			topic += arg + " "
@@ -22,14 +29,13 @@ def search(bot, update, args):
 	print("\""+ topic + "\"")
 	syntax = syntaxdb.Syntaxdb(choice = 0, search_query = topic, language = "")
 	content = syntax.getContent()
-	print(content)
 	
 	for i in range(0,len(content)):
 		count += 1
 		bot.sendChatAction(chat_id = update.message.chat_id, action = ChatAction.TYPING)
 		bot.sendMessage(chat_id = update.message.chat_id, text = content[i])
 
-	if(count == 0):
+	if(count==0):
 		bot.sendChatAction(chat_id = update.message.chat_id, action = ChatAction.TYPING)
 		bot.sendMessage(chat_id = update.message.chat_id, text =  '''
 		There are no related searches to the topic you entered! Make sure your search query was right and try again! Check for spelling mistakes and follow the format in /help
@@ -45,3 +51,6 @@ def help(bot, update):
 		Example : Suppose you want to use how to use the concept for in java,
 		/search for in java
 	''')
+
+
+
