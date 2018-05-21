@@ -14,12 +14,11 @@ def search(bot, update, args):
 	topic = ""
 	i = 0
 	count = 0
-	if(len(args)==0):
+	if(len(args) == 0):
 		bot.sendChatAction(chat_id = update.message.chat_id, action = ChatAction.TYPING)
-		bot.sendMessage(chat_id = update.message.chat_id, text =  '''
-		Please make sure to enter the search query, else I can't really help you!
+		bot.sendMessage(chat_id = update.message.chat_id, text = '''
+			Please make sure that you enter a valid search query for me to help you.
 		''')
-		exit()
 	for arg in args:
 		if(i < (len(args) - 1)):
 			topic += arg + " "
@@ -31,6 +30,7 @@ def search(bot, update, args):
 	content = syntax.getContent()
 	
 	for i in range(0,len(content)):
+		print("here")
 		count += 1
 		bot.sendChatAction(chat_id = update.message.chat_id, action = ChatAction.TYPING)
 		bot.sendMessage(chat_id = update.message.chat_id, text = content[i])
