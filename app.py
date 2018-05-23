@@ -2,7 +2,7 @@ from options import *
 import os
 
 if __name__=='__main__':
-	TOKEN = '611044233:AAEEfwW_9FqdBSMK6SF7nWDbOwX29WCh6v8'
+	TOKEN = '611044233:AAG8TuZrX1euYgAssFHqXRnInfVEs_xdJxg'
 	PORT = int(os.environ.get('PORT', '8443'))
 
 	updater = Updater(TOKEN)
