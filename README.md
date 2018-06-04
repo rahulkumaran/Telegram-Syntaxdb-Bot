@@ -2,7 +2,7 @@
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/made-with-python.svg)](http://forthebadge.com)
 
-Telegram Syntaxdb Bot is the official repository for the Syntaxdb Bot on telegram.<br/>
+Telegram Syntaxdb Bot is the official repository for the Syntaxdb Bot on telegram!<br/>
 So [SyntaxDB](https://syntaxdb.com) is basically a programming search engine that helps you search programming concepts on the go! <br/>
 
 In this project I've integrated the Python Syntaxdb API that I've created! You can check the API that I've built [here](https://github.com/rahulkumaran/python-syntaxdb).<br/>
