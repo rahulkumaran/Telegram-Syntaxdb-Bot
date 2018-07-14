@@ -13,7 +13,9 @@ There are mainly 3 options here:<br/>
 - `/help`
 - `/search`
 
+
 `/start` and `/help` are very basic options!<br/>
+
 
 ### /start
 On typing this, you get a welcome message!<br/>
