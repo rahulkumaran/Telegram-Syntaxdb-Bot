@@ -14,7 +14,7 @@ There are mainly 3 options here:<br/>
 - `/search`
 
 
-`/start` and `/help` are very basic options!<br/>
+`/start` and `/help` are the basic options!<br/>
 
 
 ### /start
